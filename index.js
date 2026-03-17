@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, "0.0.0.0" ,() => {
+  console.log(`Server is running on port:${port}`);
 });
